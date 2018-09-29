@@ -14,5 +14,13 @@ class App < Sinatra::Base
   end
 
   # Code your final two routes here:
-
+  get "/hello/:name" do
+    @user_name = params[:name]
+    "Hello #{@user_name}!"
+  end
+  
+    get "/hello/:name" do
+    @user_name = params[:name]
+    "Hello #{@user_name}!"
+  end
 end
