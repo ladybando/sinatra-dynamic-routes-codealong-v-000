@@ -25,5 +25,4 @@ class App < Sinatra::Base
     end.find
     erb :'/numbers/show.html'
   end
-  end
 end
