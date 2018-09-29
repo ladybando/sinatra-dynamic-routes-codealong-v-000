@@ -23,7 +23,7 @@ class App < Sinatra::Base
     @multiply = all_the_numbers.select do |num|
       num.id == params[:id]
     end.find
-    erb :'/medicines/show.html'
+    erb :'/numbers/show.html'
   end
   end
 end
