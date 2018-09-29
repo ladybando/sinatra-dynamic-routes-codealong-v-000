@@ -21,8 +21,8 @@ class App < Sinatra::Base
   
     get "/multiply/" do
     @multiply = all_the_numbers.select do |num|
-      num.id == params[:id]
+      num.id * num.id
     end.find
-    erb :'/numbers/show.html'
+
   end
 end
