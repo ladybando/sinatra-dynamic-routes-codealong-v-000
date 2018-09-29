@@ -19,10 +19,7 @@ class App < Sinatra::Base
     "Goodbye, #{@user_name}."
   end
   
-    get "/multiply/" do
-    @multiply = all_the_numbers.select do |num|
-      num.id * num.id
-    end.find
-
-  end
+ get "/multiply/:num1/:num2" do
+		"#{params[:num1].to_i*params[:num2].to_i}"
+	end
 end
